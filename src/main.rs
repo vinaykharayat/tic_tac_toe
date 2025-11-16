@@ -12,6 +12,11 @@ fn main() {
             println!("Player {} is the winner", current_player);
             break;
         }
+
+        if check_draw(&current_board) {
+            println!("Game resulted in draw");
+            break;
+        }
         print_board(&current_board);
         if result {
             current_player = if current_player == PLAYER_X {
@@ -54,6 +59,17 @@ fn check_winner(current_player: char, current_board: &Board) -> bool {
             won = true;
     }
     return won;
+}
+
+fn check_draw(current_board: &Board) -> bool {
+    for x in current_board{
+        for y in x {
+            if *y == ' ' {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 fn take_user_input(current_board: &mut Board, current_player: char) -> bool {
