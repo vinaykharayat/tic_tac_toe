@@ -35,6 +35,11 @@ A simple implementation of the classic Tic Tac Toe game written in Rust.
 - Players take turns to input their moves by specifying the row and column.
 - The game ends when one player gets three in a row (horizontally, vertically, or diagonally) or when the board is full.
 
+## Screenshot
+
+![Tic Tac Toe Gameplay](assets/screenshot.png)
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
