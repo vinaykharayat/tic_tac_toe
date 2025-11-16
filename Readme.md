@@ -37,7 +37,7 @@ A simple implementation of the classic Tic Tac Toe game written in Rust.
 
 ## Screenshot
 
-![Tic Tac Toe Gameplay](assets/screenshot.png)
+![Tic Tac Toe Gameplay](public/images/screenshot.png)
 
 
 ## License
